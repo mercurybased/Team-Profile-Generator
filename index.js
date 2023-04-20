@@ -49,7 +49,7 @@ function generateTeam (){
         {
             type:"list",
             name:"teamMember",
-            message:"Please choose from lsit below",
+            message:"Please choose from list below",
             choices: ["Engineer", "Intern", "Quit"]
 
         },
@@ -65,7 +65,6 @@ function generateTeam (){
               break;
             default:
                 fs.writeFileSync("index.html",generateHTML(team),"utf-8")
-              // code block
           }
 
     })
